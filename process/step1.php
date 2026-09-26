@@ -4,15 +4,15 @@ session_start();
 
 $_SESSION['step1'] = [
 
-    'penyusun' => $_POST['penyusun'],
-    'nip' => $_POST['nip'],
-    'tahun' => $_POST['tahun'],
-    'semester' => $_POST['semester'],
-    'mapel' => $_POST['mapel'],
-    'kelas' => $_POST['kelas'],
-    'topik' => $_POST['topik'],
-    'alokasi' => $_POST['alokasi'],
-    'tanggal' => $_POST['tanggal']
+    'penyusun' => trim($_POST['penyusun'] ?? ''),
+    'nip'      => trim($_POST['nip'] ?? ''),
+    'tahun'    => $_POST['tahun'] ?? '',
+    'semester' => $_POST['semester'] ?? '',
+    'mapel'    => trim($_POST['mapel'] ?? ''),
+    'kelas'    => $_POST['kelas'] ?? '',
+    'topik'    => trim($_POST['topik'] ?? ''),
+    'alokasi'  => $_POST['alokasi'] ?? '',
+    'tanggal'  => $_POST['tanggal'] ?? date('Y-m-d'),
 
 ];
 

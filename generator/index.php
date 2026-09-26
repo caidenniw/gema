@@ -415,6 +415,15 @@ Buat Modul
             </select>
         </div>
 
+        <div class="form-group">
+            <label>Tanggal Modul <span>*</span></label>
+            <input
+                type="date"
+                name="tanggal"
+                value="<?= old($step1, 'tanggal', date('Y-m-d')) ?>"
+                required>
+        </div>
+
     </div>
 
     <div class="wizard-action">

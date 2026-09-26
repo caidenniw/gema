@@ -1,0 +1,14 @@
+.git
+.gitignore
+.env
+*.log
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/
+check_pass.php
+test_*.php
+*.sql
+*.zip
+*.rar
+!template/modul.docx

@@ -1,0 +1,25 @@
+# ENV & secrets
+.env
+*.sql
+*.log
+config/local.php
+
+# Test / debug files (jangan kepush)
+check_pass.php
+test_*.php
+test_deepseek_live.php
+test_gemini.php
+
+# AI memory
+memory/
+memoryagent/
+
+# OS
+.DS_Store
+Thumbs.db
+.idea/
+*.swp
+
+# Keep vendor for Railway (PHP native butuh vendor tanpa composer install di server)
+# Jika mau clean, uncomment baris bawah untuk ignore vendor:
+# /vendor/
