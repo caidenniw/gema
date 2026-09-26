@@ -1,29 +1,28 @@
 #!/bin/bash
 set -e
 
-# Railway injects PORT env (contoh: 8080). Jika tidak ada, default 80
-PORT_TO_USE=${PORT:-80}
+PORT_TO_USE=${PORT:-8080}
 
 echo "Starting GEMA AI on port $PORT_TO_USE"
+echo "PHP Version: $(php -v | head -n1)"
+echo "DocumentRoot: /var/www/html"
 
-# Ubah Listen di ports.conf dan VirtualHost
+# Railway memberi PORT=8080, jadi kita paksa Apache listen di PORT tersebut
+# Tanpa utak-atik MPM, cukup ubah ports.conf dan vhost
 if [ "$PORT_TO_USE" != "80" ]; then
-    # Ganti Listen 80 -> Listen $PORT
+    # Ubah Listen 80 jadi Listen PORT_TO_USE
     sed -i "s/Listen 80/Listen ${PORT_TO_USE}/g" /etc/apache2/ports.conf || true
-    # Tambahkan jika belum ada
+    # Jika belum ada Listen PORT_TO_USE, tambahkan
     if ! grep -q "Listen ${PORT_TO_USE}" /etc/apache2/ports.conf; then
         echo "Listen ${PORT_TO_USE}" >> /etc/apache2/ports.conf
     fi
-    # Ubah VirtualHost *:80 -> *:PORT
+    # Ubah VirtualHost *:80 -> *:PORT_TO_USE
     sed -i "s/<VirtualHost \*:80>/<VirtualHost *:${PORT_TO_USE}>/g" /etc/apache2/sites-available/000-default.conf || true
-    sed -i "s/<VirtualHost \*:${PORT_TO_USE}>/<VirtualHost *:${PORT_TO_USE}>/g" /etc/apache2/sites-available/000-default.conf || true
 fi
 
-# Pastikan DocumentRoot mengarah ke /var/www/html
-# (default sudah benar, tapi set eksplisit untuk aman)
-# PHP config: tampilkan error di log saja
-echo "PHP Version: $(php -v | head -1)"
-echo "DocumentRoot: /var/www/html"
+cat /etc/apache2/ports.conf
+echo "--- vhost ---"
+cat /etc/apache2/sites-available/000-default.conf
 
-# Start Apache foreground
+# Jangan pakai a2enmod/a2dismod di runtime — itu bikin MPM dobel
 exec apache2-foreground
