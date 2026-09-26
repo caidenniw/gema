@@ -1,0 +1,158 @@
+/* =========================
+   HISTORY TABLE
+========================= */
+
+.history-table{
+    width:100%;
+    border-collapse:collapse;
+    background:#fff;
+    border-radius:18px;
+    overflow:hidden;
+}
+
+.history-table th{
+    background:#eaf4ff;
+    padding:16px 18px;
+    text-align:left;
+    font-weight:700;
+    color:#12366f;
+}
+
+.history-table td{
+    padding:16px 18px;
+    border-bottom:1px solid #edf1f7;
+    vertical-align:middle;
+}
+
+.history-table tbody tr{
+    transition:all .2s ease;
+}
+
+.history-table tbody tr:hover{
+    background:#f8fbff;
+}
+
+/* =========================
+   HEADER
+========================= */
+
+.history-header{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    margin-bottom:22px;
+    padding-left:18px;
+}
+
+.history-header h2{
+    margin:0;
+    font-size:34px;
+    font-weight:700;
+    color:#0b2c67;
+}
+
+.history-header p{
+    margin-top:6px;
+    color:#6b7280;
+    font-size:15px;
+}
+
+/* =========================
+   CARD
+========================= */
+
+.history-card{
+    background:#fff;
+    border-radius:22px;
+    padding:28px;
+    margin-left:18px;
+    border:1px solid #edf2ff;
+    box-shadow:0 12px 35px rgba(28,78,216,.08);
+}
+
+/* =========================
+   ACTION BUTTONS
+========================= */
+
+.action-buttons{
+    display:flex;
+    align-items:center;
+    justify-content:flex-start;
+    gap:10px;
+    flex-wrap:nowrap;
+}
+
+.btn-action{
+    display:inline-flex;
+    align-items:center;
+    justify-content:center;
+    gap:6px;
+
+    min-width:84px;
+    height:40px;
+
+    padding:0 14px;
+
+    border-radius:12px;
+
+    text-decoration:none;
+
+    font-size:13px;
+    font-weight:600;
+
+    transition:all .25s ease;
+}
+
+.btn-action i{
+    font-size:14px;
+    line-height:1;
+}
+
+.btn-action:hover{
+    transform:translateY(-2px);
+    box-shadow:0 8px 18px rgba(0,0,0,.08);
+}
+
+/* =========================
+   BUTTON COLORS
+========================= */
+
+.btn-view{
+    background:#eef5ff;
+    color:#0d6efd;
+}
+
+.btn-view:hover{
+    background:#dcecff;
+    color:#0d6efd;
+}
+
+.btn-word{
+    background:#edf7ff;
+    color:#1976d2;
+}
+
+.btn-word:hover{
+    background:#d8efff;
+    color:#1976d2;
+}
+
+.btn-pdf{
+    background:#fff1f1;
+    color:#dc3545;
+}
+
+.btn-pdf:hover{
+    background:#ffe3e3;
+    color:#dc3545;
+}
+
+.btn-delete{
+    background:#f5f5f5;
+    color:#666;
+}
+
+.btn-delete:hover{
+    background:#ffeaea;
+    color:#dc3545;
+}

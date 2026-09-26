@@ -1,0 +1,711 @@
+/* === PREVIEW MODUL AJAR GEMA AI === */
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+html{
+    scroll-behavior:smooth;
+}
+
+body{
+    margin:0;
+    background:#eef5ff;
+    font-family:"Times New Roman", serif;
+    color:#000;
+    overflow-y:auto;
+    font-size:12pt;
+    line-height:1.65;
+    letter-spacing:.15px;
+}
+
+/* === HALAMAN A4 === */
+
+.page{
+    width:210mm;
+    min-height:297mm;
+    margin:12px auto 60px;
+    background:#fff;
+    padding:16mm 18mm;
+    border-radius:12px;
+    box-shadow:
+        0 10px 30px rgba(0,0,0,.08);
+}
+
+/* === JUDUL === */
+
+h1{
+    text-align:center;
+    font-size:16pt;
+    font-weight:700;
+    margin-bottom:28px;
+    letter-spacing:.5px;
+    line-height:1.35;
+    text-transform:uppercase;
+}
+
+h2{
+    font-size:14pt;
+    font-weight:700;
+    margin:24px 0 12px;
+}
+
+/* =========================================
+   DOCUMENT HEADER
+   ========================================= */
+
+.document-header{
+    text-align:center;
+    margin-bottom:28px;
+}
+
+.document-title{
+    margin:0 0 10px 0;
+    padding:0;
+    font-family:"Times New Roman", serif;
+    font-size:14pt;
+    font-weight:700;
+    line-height:1.3;
+    text-align:center;
+    text-transform:uppercase;
+    letter-spacing:.3px;
+}
+
+.document-subtitle{
+    margin:0 0 6px 0;
+    font-family:"Times New Roman", serif;
+    font-size:14pt;
+    font-weight:700;
+    line-height:1.4;
+    text-align:center;
+    text-transform:uppercase;
+}
+
+.document-school{
+    margin:0;
+    font-family:"Times New Roman", serif;
+    font-size:14pt;
+    font-weight:700;
+    line-height:1.4;
+    text-align:center;
+    text-transform:uppercase;
+}
+
+/* === TABEL === */
+
+.modul-table{
+    width:100%;
+    border-collapse:collapse;
+    margin-bottom:28px;
+}
+
+.modul-table th{
+
+    background:#d8e8f8;
+
+    font-size:14pt;
+
+    font-weight:700;
+
+    padding:12px 16px;
+
+    text-align:left;
+
+    border:1px solid #b8b8b8;
+
+}
+
+.modul-table td{
+    border:1px solid #b8b8b8;
+    padding:14px 16px;
+    font-size:12pt;
+    vertical-align:top;
+    line-height:1.75;
+}
+
+.section-title th{
+    background:#d8e8f8;
+    font-size:14pt;
+    font-weight:700;
+    padding:12px 16px;
+    letter-spacing:.2px;
+    border:1px solid #b8b8b8;
+}
+
+.label{
+    width:24%;
+    font-size:12pt;
+    font-weight:700;
+    vertical-align:top;
+}
+ 
+.label small{
+    display:block;
+    margin-top:8px;
+    font-size:11pt;
+    font-weight:bold;
+}
+
+/* === PARAGRAF === */
+
+.section-text{
+    text-align:justify;
+    line-height:1.9;
+    margin-top:8px;
+    margin-bottom:14px;
+}
+
+/* === PENGALAMAN BELAJAR === */
+
+.kegiatan{
+    margin-bottom:18px;
+}
+
+.kegiatan:last-child{
+    margin-bottom:0;
+}
+
+.kegiatan h4{
+    font-size:13pt;
+    font-weight:bold;
+    margin-bottom:8px;
+}
+
+.kegiatan p{
+    margin-bottom:14px;
+    text-align:justify;
+    line-height:1.8;
+}
+
+/* === RENDER PENGALAMAN BELAJAR === */
+
+.pengalaman-section{
+    display:flex;
+    flex-direction:column;
+    gap:24px;
+}
+
+.kegiatan-list{
+    margin:0;
+    padding-left:22px;
+}
+
+.kegiatan-list li{
+    margin-bottom:18px;
+    text-align:justify;
+    line-height:2;
+}
+
+.kegiatan-list strong{
+    display:inline;
+    font-weight:700;
+}
+
+.kegiatan-list span{
+    display:inline;
+}
+
+.prinsip-box{
+    margin-top:8px;
+}
+
+.prinsip-title{
+    font-weight:bold;
+    margin-bottom:12px;
+}
+
+.prinsip-list{
+    margin:0;
+    padding-left:22px;
+}
+
+.prinsip-list li{
+    margin-bottom:18px;
+    text-align:justify;
+    line-height:2;
+}
+
+.prinsip-list strong{
+    display:block;
+    margin-bottom:8px;
+    color:#1d3557;
+}
+
+.prinsip-list p{
+    margin:0;
+}
+
+.kegiatan-list li,
+.prinsip-list li{
+    page-break-inside:avoid;
+}
+
+/* === PRINSIP PEMBELAJARAN === */
+
+.prinsip{
+    margin-top:10px;
+}
+
+.prinsip p{
+    margin-bottom:14px;
+    text-align:justify;
+    line-height:1.8;
+}
+
+.prinsip strong{
+    display:block;
+    margin-bottom:4px;
+}
+
+/* === LIST === */
+
+ul{
+    margin-left:24px;
+    margin-top:8px;
+}
+
+li{
+    margin-bottom:10px;
+    line-height:1.8;
+}
+
+ol{
+    margin:8px 0 0 0;
+    padding-left:20px;
+}
+
+ol li{
+    margin-bottom:10px;
+    line-height:1.8;
+    text-align:justify;
+    padding-left:2px;
+}
+
+/* === CHECKBOX === */
+
+.checkbox{
+    margin-bottom:6px;
+}
+
+/* === BULLET LIST GEMA === */
+
+.bullet-list{
+    display:flex;
+    flex-direction:column;
+    gap:10px;
+}
+
+.bullet-item{
+    display:flex;
+    align-items:flex-start;
+}
+
+.bullet-dot{
+    width:6px;
+    height:6px;
+    background:#000;
+    border-radius:50%;
+    margin-top:9px;
+    margin-right:12px;
+    flex-shrink:0;
+}
+
+.bullet-text{
+    flex:1;
+    line-height:1.8;
+}
+
+/* === TANDA TANGAN === */
+
+.ttd-container{
+    margin-top:45px;
+}
+
+.ttd-header{
+    display:flex;
+    justify-content:space-between;
+    margin-bottom:18px;
+    font-size:12pt;
+}
+
+.ttd-header > div{
+    width:45%;
+    text-align:center;
+}
+
+.ttd-row{
+    display:flex;
+    justify-content:space-between;
+    gap:80px;
+}
+
+.ttd-box{
+    width:45%;
+    text-align:center;
+}
+
+.ttd-jabatan{
+    font-size:12pt;
+    margin-bottom:70px;
+}
+
+.ttd-space{
+    height:60px;
+}
+
+.ttd-kepala{
+    display:inline-block;
+    font-weight:bold;
+    border-bottom:1px solid #000;
+    padding-bottom:2px;
+    margin-bottom:3px;
+}
+
+.ttd-guru{
+    display:inline-block;
+    font-weight:bold;
+    border-bottom:1px solid #000;
+    padding-bottom:2px;
+    margin-bottom:3px;
+}
+
+.ttd-nip{
+    margin-top:0;
+    font-size:12pt;
+    line-height:1.2;
+}
+
+/* === LAMPIRAN === */
+
+.lampiran-box h3{
+    font-size:14pt;
+    margin-bottom:14px;
+    padding-bottom:6px;
+    border-bottom:2px solid #d7e8f7;
+}
+
+.lampiran-box table{
+    margin-top:12px;
+}
+
+/* === LAMPIRAN === */
+
+.lampiran-title{
+    text-align:center;
+    font-size:16pt;
+    font-weight:700;
+    letter-spacing:1.5px;
+    color:#0d2d62;
+    margin:60px 0 40px;
+    position:relative;
+}
+
+.lampiran-title::before{
+    content:"";
+    position:absolute;
+    left:0;
+    right:0;
+    top:-20px;
+    border-top:3px solid #9fa8b5;
+}
+
+.lampiran-title::after{
+    content:"";
+    position:absolute;
+    left:0;
+    right:0;
+    bottom:-20px;
+    border-bottom:3px solid #9fa8b5;
+}
+
+.lampiran-heading{
+    background:#dceeff;
+    border:1px solid #9fa8b5;
+    padding:10px 14px;
+    font-size:14pt;
+    font-weight:bold;
+    color:#071b45;
+    margin:24px 0 16px;
+}
+
+.lampiran-subheading{
+    margin:22px 0 18px;
+    font-size:13pt;
+    font-weight:bold;
+}
+
+.lampiran-section{
+    margin-bottom:30px;
+}
+
+.lampiran-label{
+    font-size:12pt;
+    font-weight:bold;
+    color:#0d2d62;
+    margin-top:10px;
+    margin-bottom:4px;
+}
+
+.lampiran-text{
+    font-size:12pt;
+    line-height:1.75;
+    text-align:justify;
+    margin-bottom:10px;
+}
+
+.lampiran-list{
+    margin:10px 0 18px 28px;
+    padding:0;
+}
+
+.lampiran-list li{
+    margin-bottom:8px;
+    line-height:1.8;
+    text-align:justify;
+}
+
+.lampiran-answer{
+    margin-top:10px;
+    line-height:1.8;
+}
+
+.rubrik-table{
+    width:100%;
+    border-collapse:collapse;
+    margin:16px 0 24px;
+    table-layout:auto;
+}
+
+.rubrik-table th{
+    background:#cfe3f8;
+    border:1px solid #9fa8b5;
+    padding:12px 8px;
+    font-size:11pt;
+    text-align:center;
+    vertical-align:middle;
+    font-weight:bold;
+    color:#071b45;
+}
+
+.rubrik-table td{
+    border:1px solid #b8b8b8;
+    padding:12px;
+    font-size:10pt;
+    line-height:1.7;
+    vertical-align:top;
+    text-align:left;
+    white-space:normal;
+    overflow-wrap:normal;
+    word-break:normal;
+}
+
+.rubrik-table th,
+.rubrik-table td{
+    hyphens:none;
+}
+
+.rubrik-table tr{
+    page-break-inside:avoid;
+}
+
+/* === PREVIEW HEADER === */
+/* === TOPBAR === */
+
+.preview-toolbar-inner{
+    width:100%;
+    max-width:1300px;
+    display:flex;
+    justify-content:space-between;
+    align-items:flex-end;
+}
+
+.preview-brand img{
+    width:46px;
+}
+
+.preview-brand h3{
+    margin:0;
+    font-size:20px;
+    color:#071b45;
+    font-family:Arial;
+}
+
+.preview-brand span{
+    font-size:13px;
+    color:#6c7b8a;
+    font-family:Arial;
+}
+
+.preview-avatar{
+    width:42px;
+    height:42px;
+    border-radius:50%;
+    background:#006dff;
+    color:#fff;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+}
+
+.preview-user-info{
+    display:flex;
+    flex-direction:column;
+}
+
+.preview-user-info strong{
+    font-family:Arial;
+    color:#071b45;
+    font-size:15px;
+}
+
+.preview-user-info small{
+    color:#7b8794;
+    font-family:Arial;
+}
+
+.preview-user a{
+    text-decoration:none;
+    color:#d63333;
+    font-weight:600;
+    font-family:Arial;
+}
+
+.preview-toolbar{
+    background:#ffffff;
+    border-bottom:1px solid #e6eef8;
+    padding:10px 35px;
+    display:flex;
+    justify-content:center;
+}
+
+.preview-toolbar-inner{
+    width:100%;
+    max-width:1300px;
+    display:flex;
+    justify-content:space-between;
+    align-items:flex-start;
+}
+
+.toolbar-left,
+.toolbar-right{
+    display:flex;
+    align-items:center;
+    gap:14px;
+}
+
+.toolbar-link{
+    text-decoration:none;
+    color:#0b2f6a;
+    font-weight:600;
+    display:flex;
+    align-items:center;
+    gap:8px;
+    transition:.2s;
+}
+
+.toolbar-link:hover{
+    color:#006dff;
+}
+
+.toolbar-btn{
+    min-width:110px;
+    height:50px;
+
+    background:#ffffff;
+    color:#006dff;
+    border:2px solid #006dff;
+    text-decoration:none;
+
+    padding:7px 14px;
+    border-radius:10px;
+
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    gap:7px;
+
+    box-sizing:border-box;
+
+    font-family:Arial,sans-serif;
+    font-size:15px;
+    font-weight:600;
+
+    transition:.25s;
+}
+
+.toolbar-btn:hover{
+    background:#006dff;
+    color:#ffffff;
+}
+
+/* === PREVIEW HEADER BARU === */
+
+.preview-title{
+    font-family:Arial,sans-serif;
+    font-size:20px;
+    font-weight:700;
+    color:#071b45;
+    margin:0;
+    line-height:1.3;
+}
+
+.toolbar-left{
+    display:flex;
+    flex-direction:column;
+    gap:3px;
+}
+
+.toolbar-back{
+    text-decoration:none;
+    color:#006dff;
+    font-family:Arial,sans-serif;
+    font-size:15px;
+    font-weight:600;
+    display:flex;
+    align-items:center;
+    gap:8px;
+    transition:.2s;
+}
+
+.toolbar-back:hover{
+    color:#0052cc;
+}
+
+.toolbar-right{
+    display:flex;
+    justify-content:flex-end;
+    align-items:center;
+    gap:10px;
+}
+
+.editing{
+    outline:3px solid #0d6efd;
+    outline-offset:8px;
+    transition:.2s;
+}
+
+/* === PRINT === */
+
+@media print{
+
+    body{
+        background:#fff;
+        padding:0;
+    }
+
+    .page{
+        width:100%;
+        min-height:auto;
+        margin:0;
+        padding:0;
+        box-shadow:none;
+    }
+
+    .kegiatan-list li,
+    .prinsip-list li{
+    page-break-inside:avoid;
+}
+
+}
