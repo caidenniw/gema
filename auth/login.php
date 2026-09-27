@@ -37,7 +37,7 @@ rel="stylesheet">
 <link rel="stylesheet" href="../assets/css/auth.css">
 
 
-<link rel="stylesheet" href="../assets/css/mobile.css?v=20250927m5">
+<link rel="stylesheet" href="../assets/css/mobile.css?v=20250927m6">
 </head>
 
 

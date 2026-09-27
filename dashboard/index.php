@@ -105,7 +105,7 @@ Dashboard GEMA AI
 href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css"
 rel="stylesheet">
 <link rel="stylesheet" href="../assets/css/dashboard.css?v=999">
-<link rel="stylesheet" href="../assets/css/mobile.css?v=20250927m5">
+<link rel="stylesheet" href="../assets/css/mobile.css?v=20250927m6">
 </head>
 <body>
 

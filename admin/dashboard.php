@@ -90,7 +90,7 @@ rel="stylesheet">
 <link
 rel="stylesheet"
 href="../assets/css/admin.css?v=1000">
-<link rel="stylesheet" href="../assets/css/mobile.css?v=20250927m5">
+<link rel="stylesheet" href="../assets/css/mobile.css?v=20250927m6">
 </head>
 <body>
 <div class="gema-layout">

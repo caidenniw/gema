@@ -50,9 +50,16 @@ body{
 }
 
 .navbar-collapse{
-    display:flex !important;
     justify-content:space-between;
     align-items:center;
+}
+@media(min-width:992px){
+    .navbar-gema .navbar-collapse{
+        display:flex !important;
+    }
+    .navbar-gema .navbar-toggler{
+        display:none !important;
+    }
 }
 
 .navbar-nav{

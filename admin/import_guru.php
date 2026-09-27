@@ -286,7 +286,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
         href="../assets/css/admin.css?v=2"
     >
 
-<link rel="stylesheet" href="../assets/css/mobile.css?v=20250927m5">
+<link rel="stylesheet" href="../assets/css/mobile.css?v=20250927m6">
 </head>
 
 <body>
