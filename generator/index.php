@@ -101,7 +101,7 @@ rel="stylesheet">
 
 <link rel="stylesheet" href="../assets/css/dashboard.css?v=999">
 <link rel="stylesheet" href="../assets/css/wizard.css">
-<link rel="stylesheet" href="../assets/css/mobile.css?v=20250927m6">
+<link rel="stylesheet" href="../assets/css/mobile.css?v=20250927m7">
 </head>
 
 

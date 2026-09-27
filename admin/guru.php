@@ -96,7 +96,7 @@ if ($keyword !== '') {
     href="../assets/css/admin.css"
 >
 
-<link rel="stylesheet" href="../assets/css/mobile.css?v=20250927m6">
+<link rel="stylesheet" href="../assets/css/mobile.css?v=20250927m7">
 </head>
 
 <body>

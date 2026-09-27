@@ -54,7 +54,7 @@ rel="stylesheet">
 <link rel="stylesheet" href="../assets/css/dashboard.css">
 <link rel="stylesheet" href="../assets/css/history.css">
 
-<link rel="stylesheet" href="../assets/css/mobile.css?v=20250927m6">
+<link rel="stylesheet" href="../assets/css/mobile.css?v=20250927m7">
 </head>
 
 <body>

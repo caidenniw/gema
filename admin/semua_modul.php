@@ -108,7 +108,7 @@ if ($resultModul) {
         href="../assets/css/admin.css?v=1"
     >
 
-<link rel="stylesheet" href="../assets/css/mobile.css?v=20250927m6">
+<link rel="stylesheet" href="../assets/css/mobile.css?v=20250927m7">
 </head>
 
 <body>
