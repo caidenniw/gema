@@ -99,6 +99,7 @@ href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.c
 rel="stylesheet">
 <link rel="stylesheet" href="../assets/css/dashboard.css?v=999">
 <link rel="stylesheet" href="preview.css?v=1">
+<link rel="stylesheet" href="../assets/css/mobile.css?v=20250927">
 </head>
 
 <body>

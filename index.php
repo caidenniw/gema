@@ -16,6 +16,7 @@
     <!-- CSS -->
    <link rel="stylesheet" href="assets/css/style.css?v=9999">
 
+<link rel="stylesheet" href="assets/css/mobile.css?v=20250927">
 </head>
 
 <body>
