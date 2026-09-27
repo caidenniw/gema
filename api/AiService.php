@@ -20,8 +20,10 @@ class AiService
                     ]
                 ],
 
-                // Tetap seperti sistem lama
-                "max_tokens" => 12000,
+                // Model reasoning: budget harus cukup untuk "berpikir" + menulis
+                // JSON modul penuh. Kalau kekecilan, JSON terpotong
+                // (finish_reason: length) dan parse gagal.
+                "max_tokens" => DEEPSEEK_MAX_TOKENS,
 
                 // Output harus JSON
                 "response_format" => [
@@ -59,10 +61,12 @@ class AiService
                 $json
             );
 
+            // 300s terlalu mepet untuk model reasoning (butuh "berpikir"
+            // dulu sebelum menulis JSON modul penuh).
             curl_setopt(
                 $ch,
                 CURLOPT_TIMEOUT,
-                300
+                600
             );
 
             $response = curl_exec($ch);

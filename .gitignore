@@ -3,6 +3,8 @@
 *.sql
 *.log
 config/local.php
+start-proxy.bat
+run-proxy.sh
 
 # Test / debug files (jangan kepush)
 check_pass.php
