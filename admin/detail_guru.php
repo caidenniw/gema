@@ -148,7 +148,7 @@ rel="stylesheet">
     rel="stylesheet"
     href="../assets/css/admin.css?v=1"
 >
-<link rel="stylesheet" href="../assets/css/mobile.css?v=20250927m4">
+<link rel="stylesheet" href="../assets/css/mobile.css?v=20250927m5">
 </head>
 <body>
 <div class="gema-layout">

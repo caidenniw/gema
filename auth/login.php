@@ -37,7 +37,7 @@ rel="stylesheet">
 <link rel="stylesheet" href="../assets/css/auth.css">
 
 
-<link rel="stylesheet" href="../assets/css/mobile.css?v=20250927m4">
+<link rel="stylesheet" href="../assets/css/mobile.css?v=20250927m5">
 </head>
 
 
@@ -53,7 +53,11 @@ rel="stylesheet">
             <img src="../assets/img/logo.png" class="logo">
         </a>
 
-        <div class="collapse navbar-collapse">
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarAuth" aria-controls="navbarAuth" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarAuth">
 
             
             <ul class="navbar-nav ms-auto">
