@@ -2,8 +2,8 @@
 // GEMA AI - Provider Config
 // Prioritas nilai: ENV (Railway Variables) > config/local.php > default di bawah
 //
-// Mode default 1 (langsung): CommandCode Provider API  -> butuh key plan GOAT/Pro/Provider
-// Mode default 2 (proxy)   : cc-proxy lokal/Railway    -> bisa pakai key plan Go
+// Provider: CommandCode Provider API (format OpenAI Chat Completions).
+// Butuh key dari akun dengan API access: GOAT / Pro / Max / Team / Provider.
 
 $_deepseekKey = getenv('DEEPSEEK_API_KEY');
 if ($_deepseekKey === false || $_deepseekKey === '') {
