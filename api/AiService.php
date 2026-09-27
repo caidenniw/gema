@@ -28,11 +28,6 @@ class AiService
                     "type" => "json_object"
                 ],
 
-                // Non-thinking agar fokus ke output modul
-                "thinking" => [
-                    "type" => "disabled"
-                ],
-
                 "stream" => false
             ];
 
