@@ -320,5 +320,6 @@ SMP Negeri 9 Pariaman
 </footer>
 </main>
 </div>
+<script src="../assets/js/mobile.js"></script>
 </body>
 </html>

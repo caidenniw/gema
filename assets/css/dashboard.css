@@ -762,3 +762,39 @@ text-align:center;
 
 
 }
+
+/* === MOBILE DRAWER & RESPONSIVE FIX - GEMA AI 2026-09-27 === */
+.hamburger{display:none}
+.sidebar-backdrop{position:fixed;inset:0;background:rgba(7,27,69,.35);backdrop-filter:blur(2px);opacity:0;visibility:hidden;transition:.3s;z-index:998}
+.sidebar-backdrop.show{opacity:1;visibility:visible}
+@media(max-width:900px){
+  .gema-sidebar{position:fixed!important;width:260px!important;height:100vh!important;top:0;left:0;flex-direction:column!important;justify-content:flex-start!important;align-items:stretch!important;transform:translateX(-100%);transition:transform .32s cubic-bezier(.4,0,.2,1);z-index:999;overflow-y:auto;padding:25px!important;box-shadow:none!important;background:#fff!important}
+  .gema-sidebar.open{transform:translateX(0);box-shadow:10px 0 40px rgba(0,90,180,.22)!important}
+  .gema-main{margin-left:0!important;width:100%!important}
+  .gema-layout{display:block!important}
+  .hamburger{display:flex!important;align-items:center;justify-content:center;width:42px;height:42px;background:#fff;border:1.5px solid #d7e6f5;border-radius:12px;font-size:22px;color:#006dff;cursor:pointer;flex-shrink:0;line-height:1}
+  .gema-topbar{justify-content:space-between!important;gap:12px;padding:12px 16px!important;height:auto!important;min-height:64px}
+  .gema-user{flex:1;min-width:0;justify-content:flex-end;gap:12px}
+  .user-info b{font-size:12px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;max-width:110px}
+  .user-info p{display:none}
+  .gema-banner{margin:16px!important;padding:24px 20px!important;border-radius:18px!important;height:auto!important;flex-direction:column!important;text-align:center}
+  .gema-banner h1{font-size:24px!important}
+  .gema-banner p{width:100%!important;font-size:13px!important}
+  .gema-banner img{width:180px!important;margin-top:16px!important}
+  .gema-stat{margin:16px!important;grid-template-columns:1fr!important;gap:14px!important}
+  .stat-card{height:auto!important;min-height:88px;padding:16px 18px!important;gap:14px}
+  .stat-card i{width:48px!important;height:48px!important;min-width:48px!important;min-height:48px!important;font-size:22px!important}
+  .stat-card h2{font-size:26px!important}
+  .stat-card p{font-size:11px!important}
+  .gema-module{margin:16px!important;padding:16px!important}
+  .module-list{grid-template-columns:1fr!important;gap:14px!important}
+  .module-card{padding:18px!important;min-height:auto!important}
+  .gema-footer{margin:16px!important;padding:16px!important;flex-direction:column!important;text-align:center;gap:8px}
+  .gema-footer p,.gema-footer span{font-size:11px!important}
+}
+@media(max-width:380px){
+  .gema-banner h1{font-size:20px!important}
+  .stat-card{flex-direction:column;text-align:center;gap:10px!important;padding:18px!important}
+  .module-card h4{font-size:15px!important}
+}
+

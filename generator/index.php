@@ -1353,6 +1353,7 @@ document.getElementById("generateBtn").disabled=true;
 
 <script src="../assets/js/wizard.js"></script>
 
+<script src="../assets/js/mobile.js"></script>
 </body>
 
 

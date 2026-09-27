@@ -709,3 +709,35 @@ ol li{
 }
 
 }
+
+/* === MOBILE FIX PREVIEW - 2026-09-27 === */
+@media(max-width:900px){
+  .preview-toolbar{padding:12px 16px!important}
+  .preview-toolbar-inner{flex-direction:column!important;gap:12px!important;align-items:stretch!important}
+  .toolbar-left{gap:6px!important}
+  .preview-title{font-size:18px!important}
+  .toolbar-back{font-size:14px!important}
+  .toolbar-right{width:100%!important;justify-content:space-between!important;gap:8px!important}
+  .toolbar-btn{flex:1!important;min-width:auto!important;height:44px!important;font-size:13px!important;padding:0 10px!important}
+  .page{width:100%!important;max-width:100%!important;margin:0 auto 16px!important;padding:12px 14px!important;border-radius:0!important;box-shadow:none!important;min-height:auto!important;border:1px solid #e6eef8}
+  .document-title,.document-subtitle,.document-school{font-size:12pt!important}
+  .modul-table{display:block!important;overflow-x:auto;-webkit-overflow-scrolling:touch}
+  .modul-table{width:100%!important}
+  .modul-table th,.modul-table td{padding:10px 12px!important;font-size:11pt!important}
+  .label{width:30%!important}
+  .rubrik-table{display:block;overflow-x:auto;-webkit-overflow-scrolling:touch}
+  .rubrik-table table{min-width:600px}
+  .ttd-header{flex-direction:column;gap:8px;text-align:center}
+  .ttd-header>div{width:100%!important}
+  .ttd-row{flex-direction:column!important;gap:28px!important}
+  .ttd-box{width:100%!important}
+  .lampiran-title{font-size:13pt!important;margin:32px 0 24px!important}
+}
+@media(max-width:600px){
+  .page{padding:10px 12px!important}
+  .preview-title{font-size:16px!important}
+  .toolbar-btn{height:42px!important;font-size:12px!important}
+  h1{font-size:14pt!important}
+  h2{font-size:12pt!important}
+}
+

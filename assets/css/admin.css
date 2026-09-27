@@ -1689,3 +1689,40 @@ a{
     }
 
 }
+
+/* === MOBILE DRAWER & RESPONSIVE FIX ADMIN - 2026-09-27 === */
+.hamburger{display:none}
+.sidebar-backdrop{position:fixed;inset:0;background:rgba(7,27,69,.35);backdrop-filter:blur(2px);opacity:0;visibility:hidden;transition:.3s;z-index:998}
+.sidebar-backdrop.show{opacity:1;visibility:visible}
+@media(max-width:900px){
+  .gema-sidebar{position:fixed!important;width:260px!important;height:100vh!important;top:0;left:0;transform:translateX(-100%);transition:transform .32s cubic-bezier(.4,0,.2,1);z-index:999;overflow-y:auto;background:#fff!important}
+  .gema-sidebar.open{transform:translateX(0);box-shadow:10px 0 40px rgba(0,90,180,.22)!important}
+  .gema-main{margin-left:0!important;width:100%!important}
+  .gema-layout{display:block!important}
+  .hamburger{display:flex!important;align-items:center;justify-content:center;width:42px;height:42px;background:#fff;border:1.5px solid #d7e6f5;border-radius:12px;font-size:22px;color:#006dff;cursor:pointer;flex-shrink:0}
+  .gema-topbar{justify-content:space-between!important;gap:12px;padding:12px 16px!important;height:auto!important;min-height:64px}
+  .gema-user{flex:1;min-width:0;justify-content:flex-end;gap:10px}
+  .admin-content,.guru-content,.semua-modul-content,.import-content,.statistik-content{padding:20px 16px 0!important}
+  .admin-content h1,.guru-content h1{font-size:24px!important}
+  .gema-banner{margin:16px!important;padding:24px 20px!important;flex-direction:column!important;text-align:center;height:auto!important}
+  .gema-banner h1{font-size:24px!important}
+  .gema-banner p{width:100%!important}
+  .gema-banner img{width:180px!important;margin-top:12px!important}
+  .gema-stat,.statistik-summary{margin:16px!important;grid-template-columns:1fr!important;gap:14px!important}
+  .statistik-grid{grid-template-columns:1fr!important}
+  .detail-guru-data{grid-template-columns:1fr!important;gap:14px!important}
+  .detail-guru-header{flex-direction:column;text-align:center}
+  .guru-actions{flex-direction:column;align-items:stretch}
+  .guru-search{width:100%}
+  .guru-table-wrap,.modul-table-wrap,.statistik-table-wrap{overflow-x:auto;-webkit-overflow-scrolling:touch}
+  .guru-table,.modul-table,.statistik-table{min-width:620px}
+  .import-form{flex-direction:column;align-items:stretch}
+  .csv-header,.csv-row{grid-template-columns:1fr 1fr!important;gap:6px}
+  .admin-card{padding:20px 16px!important}
+  .gema-footer{margin:16px!important;flex-direction:column!important;text-align:center}
+}
+@media(max-width:380px){
+  .gema-banner h1{font-size:20px!important}
+  .stat-card{flex-direction:column;text-align:center}
+}
+

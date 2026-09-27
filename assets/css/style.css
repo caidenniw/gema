@@ -413,3 +413,14 @@ footer p{
     }
 
 }
+
+/* === MOBILE POLISH LANDING - 2026-09-27 === */
+@media(max-width:480px){
+  .navbar-gema{margin:10px!important}
+  .logo{width:120px!important}
+  .hero h1{font-size:28px!important}
+  .hero p{font-size:14px!important}
+  .feature-item{padding:16px!important}
+  .steps{padding:24px 16px!important}
+}
+

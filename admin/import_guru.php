@@ -615,5 +615,6 @@ document.addEventListener('DOMContentLoaded', function () {
 });
 </script>
 
+<script src="../assets/js/mobile.js"></script>
 </body>
 </html>

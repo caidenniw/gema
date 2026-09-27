@@ -1381,6 +1381,7 @@ TANDA TANGAN
 
 <script src="editor.js"></script>
 
+<script src="../assets/js/mobile.js"></script>
 </body>
 
 </html>

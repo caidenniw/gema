@@ -156,3 +156,24 @@
     background:#ffeaea;
     color:#dc3545;
 }
+
+/* === MOBILE FIX HISTORY - 2026-09-27 === */
+@media(max-width:900px){
+  .history-header{padding-left:0!important;flex-direction:column!important;align-items:flex-start!important;gap:8px!important;margin-bottom:16px!important}
+  .history-header h2{font-size:26px!important}
+  .history-header p{font-size:13px!important}
+  .history-card{margin-left:0!important;padding:16px!important;border-radius:16px!important;overflow-x:auto;-webkit-overflow-scrolling:touch}
+  .history-table{min-width:640px}
+  .history-table th,.history-table td{padding:12px 10px!important;font-size:13px!important;white-space:nowrap}
+  .action-buttons{flex-wrap:wrap!important;gap:6px!important}
+  .btn-action{min-width:auto!important;flex:1 1 calc(50% - 6px);height:38px!important;padding:0 10px!important;font-size:12px!important}
+}
+@media(max-width:600px){
+  .history-card{padding:12px!important}
+  .history-table{min-width:560px}
+  .btn-action{flex:1 1 calc(50% - 6px)}
+}
+@media(max-width:380px){
+  .btn-action{flex:1 1 100%}
+}
+

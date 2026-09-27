@@ -812,5 +812,6 @@ while ($row = mysqli_fetch_assoc($queryBulanan)) {
 
 </div>
 
+<script src="../assets/js/mobile.js"></script>
 </body>
 </html>
