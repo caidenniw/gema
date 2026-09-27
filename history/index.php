@@ -54,7 +54,7 @@ rel="stylesheet">
 <link rel="stylesheet" href="../assets/css/dashboard.css">
 <link rel="stylesheet" href="../assets/css/history.css">
 
-<link rel="stylesheet" href="../assets/css/mobile.css?v=20250927">
+<link rel="stylesheet" href="../assets/css/mobile.css?v=20250927m4">
 </head>
 
 <body>
@@ -185,21 +185,21 @@ while($row=mysqli_fetch_assoc($query)):
 
 <tr>
 
-<td><?= $no++ ?></td>
+<td data-label="No"><?= $no++ ?></td>
 
-<td><?= htmlspecialchars($row['judul_modul']) ?></td>
+<td data-label="Judul Modul"><?= htmlspecialchars($row['judul_modul']) ?></td>
 
-<td><?= htmlspecialchars($row['mata_pelajaran']) ?></td>
+<td data-label="Mapel"><?= htmlspecialchars($row['mata_pelajaran']) ?></td>
 
-<td><?= htmlspecialchars($row['kelas']) ?></td>
+<td data-label="Kelas"><?= htmlspecialchars($row['kelas']) ?></td>
 
-<td>
+<td data-label="Tanggal">
 
 <?= date("d M Y",strtotime($row['created_at'])) ?>
 
 </td>
 
-<td>
+<td data-label="Aksi">
 
     <div class="action-buttons">
 
