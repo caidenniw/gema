@@ -2,8 +2,8 @@
 // GEMA AI - Provider Config
 // Prioritas nilai: ENV (Railway Variables) > config/local.php > default di bawah
 //
-// Provider: CommandCode Provider API (format OpenAI Chat Completions).
-// Butuh key dari akun dengan API access: GOAT / Pro / Max / Team / Provider.
+// Provider: OpenRouter (format OpenAI Chat Completions).
+// Butuh key OpenRouter milik client (diset via ENV, bukan di file).
 
 $_deepseekKey = getenv('DEEPSEEK_API_KEY');
 if ($_deepseekKey === false || $_deepseekKey === '') {
@@ -45,14 +45,13 @@ if (file_exists(__DIR__ . '/local.php')) {
 
 // Default terakhir
 if ($_deepseekUrl === '') {
-    $_deepseekUrl = 'https://api.commandcode.ai/provider/v1/chat/completions';
+    $_deepseekUrl = 'https://openrouter.ai/api/v1/chat/completions';
 }
 if ($_deepseekModel === '') {
-    $_deepseekModel = 'deepseek/deepseek-v4-flash';
+    $_deepseekModel = 'deepseek/deepseek-chat';
 }
-// Budget token output. Model reasoning memakai sebagian budget untuk "berpikir"
-// sebelum menulis konten; 12000 habis di reasoning -> JSON modul terpotong
-// (finish_reason: length). Max output model ini 393.216 token.
+// Budget token output. Dipertahankan 64000 sebagai batas atas agar JSON
+// modul penuh tidak terpotong (finish_reason: length).
 if ($_deepseekMaxTokens === '') {
     $_deepseekMaxTokens = '64000';
 }
